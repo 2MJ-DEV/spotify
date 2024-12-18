@@ -1,0 +1,507 @@
+
+
+:root {
+    --grey: #121212;
+    --back: #232323;
+    --ligh: #888888;
+    --spoti: #68d36e;
+    --blanc: #fff;
+    --pad: 15px 20px;
+    --radus: 10px; 
+    --bottom: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    padding: 10px;
+}
+
+.view {
+    display: flex;
+    gap: 10px;
+}
+
+.side {
+    width: 30%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content {
+    width: 70%;
+    min-height: 100vh;
+    background: linear-gradient(#19d7f9 10vh, var(--grey));
+    border-radius: var(--radus);
+}
+
+.menu {
+    background: var(--grey);
+    padding: var(--pad);
+    border-radius: var(--radus);
+}
+
+.listing {
+    background: var(--grey);
+    padding: var(--pad);
+    border-radius: var(--radus);
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--ligh);
+    transition: .2 ease;
+    cursor: pointer;
+}
+
+.text-box:hover {
+    color: var(--blanc);
+}
+
+.text-m {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.mBot15 {
+    margin-bottom: 15px;
+}
+
+.listing-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--bottom);
+}
+
+.listing-head .material-icons {
+    color: var(--ligh);
+}
+
+.icons-actions span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0);
+    transition: .2s ease;
+}
+
+.icons-actions span:hover {
+    color: var(--blanc);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tags a{
+    text-decoration: none;
+    color: #fff;
+    background: var(--back);
+    font-size: 0.7rem;
+    padding: 7px 14px;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--ligh);
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0);
+    transition: .2s ease;
+}
+
+.filters-icon:hover {
+    color: var(--blanc);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.drop {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.drop .label {
+    font-size: 0.75rem;
+    color: var(--ligh);
+}
+
+.drop .material-icons{
+    font-size: 1.5rem;
+    color: var(--ligh);
+}
+
+.playlists {
+    margin: 15px 0;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .2s ease;
+}
+
+.playlist:hover{
+    background: rgba(255, 255, 255, .05);
+}
+
+.playlist > div:first-child {
+    width: 45px;
+    height: 45px;
+}
+
+.playlist > div > img {
+    width: 100%;
+    border-radius: var(--radus);
+}
+
+.playlist a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.playlist .material-icons {
+    font-size: 0.8rem;
+    color: var(--spoti);
+}
+
+.artist {
+    color: var(--ligh);
+    font-size: 0.75rem;
+}
+
+/* ============= fin partie gauche============ */
+
+
+/* side */
+
+.content-header {
+    padding: 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    transition: .2s ease;
+}
+
+.header-nav span:hover {
+    color: var(--blanc);
+    background: rgba(255, 255, 255, .1);
+}
+
+.header-album {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin: 30px 0;
+}
+
+.album-img {
+    width: 25%;
+}
+
+.album-img img {
+    width: 100%;
+}
+
+.header-album h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.album-type {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.artist-metas {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.artist-img {
+    width: 25px;
+    border-radius: 50px;
+}
+
+.artist-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.artist-datas {
+    font-size: 0.8rem;
+    color: #d7d7d7;
+}
+
+.album {
+    padding: 20px;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.album-player {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.album-player span{
+    color: var(--ligh);
+    font-size: 2rem;
+}
+
+.album-player .player {
+    background: var(--spoti);
+    width: 50px;
+    height: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.album-listing {
+    margin: 20px 0;
+}
+
+.album-listing table tr {
+    display: flex;
+    align-items: center;
+}
+
+.album-listing table {
+    width: 100%;
+}
+
+.album-listing table th span.material-icons {
+    font-size: 1rem;
+}
+
+.album-listing table th, .album-listing table td {
+    text-align: left;
+}
+
+.album-listing table tr:first-child {
+    border-bottom: 1px solid var(--ligh);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.album-listing table th:first-child, .album-listing table td:first-child {
+    width: 5%;
+}
+
+.album-listing table th:nth-child(2), .album-listing table td:nth-child(2) {
+    width: 50%;
+}
+
+.album-listing table th:nth-child(3), .album-listing table td:nth-child(3) {
+    width: 40%;
+}
+
+.album-listing table th:first-child, .album-listing table td:first-child {
+    width: 5%;
+}
+
+.album-listing table th {
+    color: var(--ligh);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.album-listing table tr {
+    padding: 10px;
+}
+
+.album-listing table td:first-child {
+    font-size: 0.9rem;
+    color: var(--ligh);
+}
+
+.album-listing table td:nth-child(2) span:first-child {
+    color: #fff;
+    font-size: .95rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.album-listing table td:nth-child(2) span:last-child {
+    color: var(--ligh);
+    font-size: 0.8rem;
+    display: block;
+}
+
+.album-listing table td:nth-child(3) {
+    font-size: 0.9rem;
+    color: var(--ligh);
+}
+
+.album-listing table td:nth-child(4) {
+    font-size: 0.9rem;
+    color: var(--ligh);
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+.single-infos {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.single-cover {
+    width: 55px;
+    height: 55px;
+    border-radius: var(--radus);
+}
+
+.single-metas {
+    width: 60%;
+}
+
+.single-title {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.single-artist {
+    display: block;
+    width: max-content !important;
+    color: var(--ligh);
+    font-size: 0.75rem;
+}
+
+.like {
+    color: var(--spoti);
+    font-size: 1.3rem;
+}
+
+.system {
+    width: 50%;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sharing{
+    width: 15%;
+}
+
+.actions span {
+    color: var(--ligh);
+    font-size: 1.8rem;
+}
+
+.actions .isplaying {
+    width: 40px;
+    height: 40px;
+    background: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #000;
+}
+
+.system-timer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.system-time {
+    color: var(--ligh);
+    font-size: 0.75rem;
+}
+
+.system-range {
+    width: 90%;
+    height: 4px;
+    background: var(--back);
+    border-radius: 35px;
+    position: relative;
+}
+
+.system-range span {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background: #fff;
+    border-radius: 35px;
+    top: 0;
+    left: 0;
+}
+
+.sharing{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sharing span{
+    font-size: 1.3rem;
+    color: var(--ligh);
+}
